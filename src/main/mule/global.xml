@@ -9,7 +9,7 @@ http://www.mulesoft.org/schema/mule/mule-apikit http://www.mulesoft.org/schema/m
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd">
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="1ffe0f6e-3b1c-4d54-8436-0026fac755c4" >
-		<http:listener-connection host="0.0.0.0" port="8081" />
+		<http:listener-connection host="${http.host}" port="${http.port}" />
 	</http:listener-config>
 	<apikit:config name="american-flights-api-config" api="american-flights-api.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" />
 	<db:config name="Database_Config" doc:name="Database Config" doc:id="31bb723a-6bb9-4081-aa71-636017c88b1b" >

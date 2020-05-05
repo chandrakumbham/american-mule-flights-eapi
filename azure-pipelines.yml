@@ -27,4 +27,4 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package deploy -DmuleDeploy -Denvironment=production -Dworkers=1 -DworkerType=Micro -s $(userSecureFile.secureFilePath)'
+    goals: 'package deploy -DmuleDeploy -Denvironment=Sandbox -Denv=dev -Dworkers=1 -DworkerType=Micro -s $(userSecureFile.secureFilePath)'
