@@ -8,7 +8,12 @@
     <packaging>mule-application</packaging>
 
 	<name>american-mule-flights-eapi-v1</name>
-
+	<parent>
+		<groupId>com.mycompany</groupId>
+		<artifactId>parent-pom</artifactId>
+		<version>0.0.5-SNAPSHOT</version>
+		<relativePath>parent-pom.xml</relativePath>
+	</parent>
     <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -32,7 +37,33 @@
                             <artifactId>mysql-connector-java</artifactId>
                         </sharedLibrary>
                     </sharedLibraries>
+                    
+                   <!--  <cloudHubDeployment>
+						<username>${username}</username>
+						<password>${password}</password>
+						<workers>1</workers>
+						<workerType>Micro</workerType>
+						<environment>Sandbox</environment>
+						<server>anypoint</server>
+						<muleVersion>4.2.2</muleVersion>	
+						<uri>https://anypoint.mulesoft.com</uri>
+						<applicationName>mrcl-mule-eapi-v1-cski</applicationName>
+						 <objectStoreV2>true</objectStoreV2> 
+						<properties>
+							<key>value</key>
+						</properties>
+					</cloudHubDeployment>  -->
                 </configuration>
+              <!--  <executions>
+					<execution>
+						<id>deploy</id>
+						<phase>deploy</phase>
+						<goals>
+							<goal>deploy</goal>
+						</goals>
+					</execution>
+				</executions> -->
+                
 			</plugin>
 		<plugin>
                 <groupId>com.mulesoft.munit.tools</groupId>
