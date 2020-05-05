@@ -36,8 +36,8 @@
                       <cloudHubDeployment>
 						<username>${username}</username>
 						<password>${password}</password>
-						<workers>${workers}</workers>
-						<workerType>${workerType}</workerType>
+						<workers>1</workers>
+						<workerType>Micro</workerType>
 						<environment>Sandbox</environment>
 						<!--  <server>anypoint</server> -->
 						<muleVersion>4.2.2</muleVersion>	
