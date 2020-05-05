@@ -36,10 +36,10 @@
                       <cloudHubDeployment>
 						<username>${username}</username>
 						<password>${password}</password>
-						<workers>${workers}</workers>
-						<workerType>${workerType}</workerType>
+						<workers>1</workers>
+						<workerType>Micro</workerType>
 						<environment>Sandbox</environment>
-						<!--  <server>anypoint</server> -->
+						  <server>anypoint</server> 
 						<muleVersion>4.2.2</muleVersion>	
 						<uri>https://anypoint.mulesoft.com</uri>
 						<applicationName>mrcl-mule-eapi-v1-cski</applicationName>
@@ -49,7 +49,7 @@
 						</properties>
 					</cloudHubDeployment>  
                 </configuration>
-              <!--  <executions>
+                <executions>
 					<execution>
 						<id>deploy</id>
 						<phase>deploy</phase>
@@ -57,14 +57,14 @@
 							<goal>deploy</goal>
 						</goals>
 					</execution>
-				</executions> -->
+				</executions> 
                 
 			</plugin>
 		<plugin>
                 <groupId>com.mulesoft.munit.tools</groupId>
                 <artifactId>munit-maven-plugin</artifactId>
                 <version>${munit.version}</version>
-                <executions>
+               <!-- <executions>
                     <execution>
                         <id>test</id>
                         <phase>test</phase>
@@ -81,7 +81,7 @@
                             <format>html</format>
                         </formats>
                     </coverage>
-                </configuration>
+                </configuration> -->
             </plugin>
         </plugins>
 	</build>
