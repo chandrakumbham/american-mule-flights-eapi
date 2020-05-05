@@ -19,5 +19,7 @@ http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/cu
 			</db:connection-properties>
 		</db:my-sql-connection>
 	</db:config>
+	<configuration-properties doc:name="Configuration properties" doc:id="41f3a889-94ce-4f4f-846e-18a3a724ea22" file="${env}.properties" />
+	<global-property doc:name="Global Property" doc:id="fec1ba79-9b02-4d11-be9a-fe927244cdfc" name="env" value="qa" />
 	
 	</mule>
