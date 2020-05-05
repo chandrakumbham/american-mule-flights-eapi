@@ -49,7 +49,7 @@
 						</properties>
 					</cloudHubDeployment>  
                 </configuration>
-              <!--  <executions>
+                <executions>
 					<execution>
 						<id>deploy</id>
 						<phase>deploy</phase>
@@ -57,14 +57,14 @@
 							<goal>deploy</goal>
 						</goals>
 					</execution>
-				</executions> -->
+				</executions> 
                 
 			</plugin>
 		<plugin>
                 <groupId>com.mulesoft.munit.tools</groupId>
                 <artifactId>munit-maven-plugin</artifactId>
                 <version>${munit.version}</version>
-                <executions>
+               <!-- <executions>
                     <execution>
                         <id>test</id>
                         <phase>test</phase>
@@ -81,7 +81,7 @@
                             <format>html</format>
                         </formats>
                     </coverage>
-                </configuration>
+                </configuration> -->
             </plugin>
         </plugins>
 	</build>
