@@ -13,7 +13,10 @@ steps:
 - task: DownloadSecureFile@1
   inputs:
     secureFile: 'settings.xml'
-    
+- task: MavenAuthenticate@0
+  displayName: 'maven authenticate'
+  inputs:
+    artifactsFeeds: anypoint
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
