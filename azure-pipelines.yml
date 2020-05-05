@@ -11,6 +11,7 @@ pool:
 
 steps:
 - task: DownloadSecureFile@1
+  name: userSecureFile
   inputs:
     secureFile: 'settings.xml'
 - task: MavenAuthenticate@0
@@ -26,4 +27,4 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package deploy -DmuleDeploy -Dusername=chandumum2 -Dpassword=Test12345'
+    goals: 'package deploy -DmuleDeploy -s $(userSecureFile.secureFilePath)'
