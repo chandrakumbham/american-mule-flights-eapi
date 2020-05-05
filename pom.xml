@@ -39,7 +39,7 @@
 						<workers>1</workers>
 						<workerType>Micro</workerType>
 						<environment>Sandbox</environment>
-						<!--  <server>anypoint</server> -->
+						  <server>anypoint</server> 
 						<muleVersion>4.2.2</muleVersion>	
 						<uri>https://anypoint.mulesoft.com</uri>
 						<applicationName>mrcl-mule-eapi-v1-cski</applicationName>
