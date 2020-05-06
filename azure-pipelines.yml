@@ -28,3 +28,8 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package deploy -DmuleDeploy -Denvironment=Sandbox -Denv=dev -Dworkers=1 -DworkerType=Micro -s $(userSecureFile.secureFilePath)'
+    - task: PublishPipelineArtifact@1
+      inputs:
+        targetPath: '$(Pipeline.Workspace)'
+        artifact: 'drop'
+        publishLocation: 'pipeline'
