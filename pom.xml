@@ -42,7 +42,7 @@
 						<server>anypoint</server> 
 						<muleVersion>4.2.2</muleVersion>	
 						<uri>https://anypoint.mulesoft.com</uri>
-						<applicationName>american-mule-eapi-v1-cks-1</applicationName>
+						<applicationName>american-mule-eapi-v1</applicationName>
 						 <objectStoreV2>true</objectStoreV2> 
 						<properties>
 							<key>value</key>
@@ -123,11 +123,7 @@
             <classifier>mule-plugin</classifier>
             <scope>test</scope>
         </dependency>
-        <dependency>
-    			<groupId>org.mule.distributions</groupId>
-    			<artifactId>mule-runtime-impl-bom</artifactId>
-   			 <version>4.1.1</version>
-		</dependency>	
+        
         <dependency>
             <groupId>com.mulesoft.munit</groupId>
             <artifactId>munit-tools</artifactId>
