@@ -42,7 +42,7 @@
 						<server>anypoint</server> 
 						<muleVersion>4.2.2</muleVersion>	
 						<uri>https://anypoint.mulesoft.com</uri>
-						<applicationName>american-mule-eapi-v1</applicationName>
+						<applicationName>american-mule-experinceapi-v2</applicationName>
 						 <objectStoreV2>true</objectStoreV2> 
 						<properties>
 							<key>value</key>
