@@ -122,7 +122,13 @@
             <version>2.2.1</version>
             <classifier>mule-plugin</classifier>
             <scope>test</scope>
-        </dependency>	<dependency>
+        </dependency>
+        <dependency>
+    			<groupId>org.mule.distributions</groupId>
+    			<artifactId>mule-runtime-impl-bom</artifactId>
+   			 <version>4.1.1</version>
+		</dependency>	
+        <dependency>
             <groupId>com.mulesoft.munit</groupId>
             <artifactId>munit-tools</artifactId>
             <version>2.2.1</version>
