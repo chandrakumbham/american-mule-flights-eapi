@@ -23,7 +23,7 @@ output application/json
 		<db:select doc:name="Select" doc:id="900d27c5-2f9f-4acb-bb84-b9a912779489" config-ref="Database_Config">
 			<db:sql >SELECT *
 FROM american
-WHERE toAirport = 'SFO'</db:sql>
+WHERE ID = :ID</db:sql>
 			<db:input-parameters ><![CDATA[#[{'ID' : attributes.uriParams.ID}]]]></db:input-parameters>
 		</db:select>
 		<ee:transform doc:name="Transform Message" doc:id="daf818ac-b60b-4946-9f43-7125bccac6eb" >
