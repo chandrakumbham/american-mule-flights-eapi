@@ -14,7 +14,7 @@ http://www.mulesoft.org/schema/mule/api-gateway http://www.mulesoft.org/schema/m
 	</http:listener-config>
 	<apikit:config name="american-flights-api-config" api="american-flights-api.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" />
 	<db:config name="Database_Config" doc:name="Database Config" doc:id="31bb723a-6bb9-4081-aa71-636017c88b1b" >
-		<db:my-sql-connection host="192.168.1.70" port="3306" user="root" password="Kruthi!345" database="airline" >
+		<db:my-sql-connection host="${db.host}" port="${db.port}" user="${db.user}" password="${db.password}" database="${db.database}" >
 			<db:connection-properties >
 				<db:connection-property key="serverTimezone" value="UTC" />
 			</db:connection-properties>
