@@ -43,7 +43,7 @@ output application/json
   ID: 1,
   code: "GQ574",
   price: 399,
-  departureDate: "2016/12/20",
+  departureDate: "2020/12/20",
   origin: "ORD",
   destination: "SFO",
   emptySeats: 200,
