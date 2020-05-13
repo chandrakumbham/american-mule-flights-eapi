@@ -2,13 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.mycompany</groupId>
+	<groupId>7da6bfe9-f320-4bc6-95bc-ab6361d923d8</groupId>
 	<artifactId>mrcl-mule-flights-eapi-v1</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>mule-application</packaging>
 
 	<name>american-mule-flights-eapi-v1</name>
 	
+    <description/>
     <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -56,7 +57,7 @@
 						<goals>
 							<goal>deploy</goal>
 						</goals>
-					</execution>
+                    </execution>
 				</executions> 
                 
 			</plugin>

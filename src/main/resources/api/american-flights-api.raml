@@ -14,7 +14,7 @@ types:
   AmericanFlight: !include examples/AmericanFlightDataType.raml
 
 /flights:
-  is: [client-id-required]
+
   get:
     queryParameters: 
       destination:
@@ -45,7 +45,7 @@ types:
               message: Flight added (but not really)
   
   /{ID}:
-    is: [client-id-required]
+    
     get:
       responses: 
         200:
