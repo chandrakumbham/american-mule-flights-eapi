@@ -65,7 +65,7 @@
                 <groupId>com.mulesoft.munit.tools</groupId>
                 <artifactId>munit-maven-plugin</artifactId>
                 <version>${munit.version}</version>
-               <!--  <executions>
+                 <executions>
                     <execution>
                         <id>test</id>
                         <phase>test</phase>
@@ -82,7 +82,8 @@
                             <format>html</format>
                         </formats>
                     </coverage>
-                </configuration> -->
+			<runtimeVersion>4.1.2-hf2</runtimeVersion> 
+                </configuration> 
             </plugin>
         </plugins>
 	</build>
